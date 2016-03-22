@@ -1,0 +1,163 @@
+@font-face {
+  font-family: 'Junction';
+  src: url("../../fonts/junction-bold.eot");
+  src: url("../../fonts/junction-bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/junction-bold.woff") format("woff"), url("../../fonts/junction-bold.ttf") format("truetype"), url("../../fonts/junction-bold.svg#junctionbold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Junction';
+  src: url("../../fonts/junction-light.eot");
+  src: url("../../fonts/junction-light.eot?#iefix") format("embedded-opentype"), url("../../fonts/junction-light.woff") format("woff"), url("../../fonts/junction-light.ttf") format("truetype"), url("../../fonts/junction-light.svg#junctionlight") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Junction';
+  src: url("../../fonts/junction-regular.eot");
+  src: url("../../fonts/junction-regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/junction-regular.woff") format("woff"), url("../../fonts/junction-regular.ttf") format("truetype"), url("../../fonts/junction-regular.svg#junctionregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font: 300 125%/1.5 "Junction", Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+}
+
+h1 {
+  font-size: calc(2em + 1vw);
+}
+
+h2 {
+  font-size: calc(1.5em + 1vw);
+  margin-bottom: .25em;
+}
+
+a {
+  color: #333;
+}
+
+.byline {
+  font-weight: 300;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body > header {
+  flex-grow: 1;
+  padding: 2vw 4vw;
+  background: crimson;
+}
+
+body > main {
+  flex-grow: 2;
+}
+
+.category-list {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+nav[role="navigation"] {
+  transition: all 300ms ease-out;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.js nav[role="navigation"] {
+  overflow: hidden;
+  max-height: 0;
+}
+
+nav[role="navigation"].active {
+  max-height: 20em;
+}
+
+.category-list-item {
+  text-align: center;
+  line-height: 3em;
+  margin: 0;
+  text-decoration: none;
+  color: #ccc;
+}
+
+.category-list-item:first-of-type {
+  background: black;
+}
+
+.category-list-item:nth-of-type(2) {
+  background: #0b0b0b;
+}
+
+.category-list-item:nth-of-type(3) {
+  background: #161616;
+}
+
+.category-list button {
+  appearance: none;
+  border: 0;
+  line-height: 3em;
+  font-size: .75em;
+  font-family: 'Junction', sans-serif;
+}
+
+main article {
+  padding: 2vw 4vw;
+}
+
+.portfolio-items {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.preview {
+  flex: 0 1 auto;
+  margin-right: 2vw;
+  padding: calc(.5em + 1vh) calc(1em + 1vw);
+  float: left;
+  background: pink;
+}
+.preview:nth-of-type(2) {
+  background: palegreen;
+}
+
+.preview h2 a {
+  color: #333;
+  text-decoration: none;
+}
+
+figure {
+  margin: 1.5em 0;
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: .75em;
+  margin: .5em 0;
+}

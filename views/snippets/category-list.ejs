@@ -1,0 +1,19 @@
+<section class="category-list">
+
+	<nav role="navigation" id="menu">
+
+	<% categories.forEach(function(category) { %>
+
+		<a href="/<%= category.fields.title.toLowerCase() %>" title="Category: <%= category.fields.title %>" class="category-list-item">
+			<%= category.fields.title %>
+		</a>
+
+	<% }); %>
+
+
+
+	</nav>
+
+	<button>&vellip; Menu</button>
+
+</section>

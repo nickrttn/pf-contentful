@@ -1,0 +1,9 @@
+<% include ../application/head %>
+
+	<section class="portfolio-items">
+		<% posts.forEach(function(post) { %>
+			<% include article-preview %>
+		<% }) %>
+	</section>
+
+<% include ../application/foot %>

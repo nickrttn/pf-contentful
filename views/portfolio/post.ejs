@@ -1,0 +1,17 @@
+<% include ../application/head %>
+
+<article>
+	<h1><%= postTitle %></h1>
+	<p class="category">
+		<% categories.forEach(function(category){ %>
+			<%= category.fields.title %>
+		<% }); %>
+	</p>
+
+	<%- body %>
+	<p class="tags"><% tags.forEach(function(tag) { %>
+		<%= tag %>,
+		<% }); %></p>
+</article>
+
+<% include ../application/foot %>
